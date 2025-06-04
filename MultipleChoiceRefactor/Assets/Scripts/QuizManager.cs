@@ -26,32 +26,32 @@ public class QuizManager : MonoBehaviour
         {
             new QuizQuestion
             {
-                question = "What is Michael's favorite food?",
-                answers = new string[] { "Pizza", "Food", "Bigoz", "Yellow" },
+                question = "Which ocean is the largest in the world?",
+                answers = new string[] { "Pacific Ocean", "Indian Ocean", "Atlantic Ocean", "Arctic Ocean" },
+                correctAnswerIndex = 0
+            },
+            new QuizQuestion
+            {
+                question = "What is the main ingredient in guacamole?",
+                answers = new string[] { "Tomato","Avocado","Cucumber","Zucchini" },
+                correctAnswerIndex = 1
+            },
+            new QuizQuestion
+            {
+                question = "How many continents are there on Earth?",
+                answers = new string[] { "5", "6", "7", "8" },
                 correctAnswerIndex = 2
             },
             new QuizQuestion
             {
-                question = "What is the name of the Owl Scientist?",
-                answers = new string[] { "Owly", "He has a name?!", "Hoo too", "Athena" },
-                correctAnswerIndex = 1
+                question = "What year did the Berlin Wall fall?",
+                answers = new string[] { "1979", "1985", "1989", "1991" },
+                correctAnswerIndex = 2
             },
             new QuizQuestion
             {
-                question = "Which animal barks?",
-                answers = new string[] { "Cat", "Dog", "Michael", "Bird" },
-                correctAnswerIndex = 1
-            },
-            new QuizQuestion
-            {
-                question = "What is on my sweater?",
-                answers = new string[] { "Logo of a company", "The number 20", "Moms Spaggetti", "Nothing" },
-                correctAnswerIndex = 3
-            },
-            new QuizQuestion
-            {
-                question = "Which team in mindlabs is objectivly the coolest?",
-                answers = new string[] { "Education Team", "Team RED", "Virtual Humans", "Health Team" },
+                question = "Who painted 'The Scream'?",
+                answers = new string[] { "Edvard Munch", "Gustav Klimt", "Pablo Picasso", "Salvador Dali" },
                 correctAnswerIndex = 0
             }
         };
