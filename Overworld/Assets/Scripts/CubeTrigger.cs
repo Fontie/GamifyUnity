@@ -92,6 +92,7 @@ public class CubeTrigger : MonoBehaviour
 
         if (canAccessLevel && Input.GetKeyDown(KeyCode.Return)) // Detect Enter key
         {
+            playerScript.accessLevel = 20;
             //enter level
             PerformAction();
         }

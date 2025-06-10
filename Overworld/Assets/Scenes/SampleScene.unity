@@ -791,6 +791,25 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &250925435 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -851114287730531682, guid: 4bb7af81d7cb81f4890cfcfd3bac9974, type: 3}
+  m_PrefabInstance: {fileID: 335320889}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &250925439
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 250925435}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e46803d27d63a4746a58ee3d8a075a48, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  accessLevelNeeded: 1
+  playerObject: {fileID: 1773745211}
 --- !u!1 &256097090
 GameObject:
   m_ObjectHideFlags: 0
@@ -933,9 +952,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerOnCube: 0
-  levelURL: http://localhost:8000/multipleChoiceVR.html
+  levelURL: https://playground.interactievetechnologie.nl/VrMultipleChoice.html
   accessLevelNeeded: 1
-  accessLevelOnSeperateTab: 0
+  accessLevelOnSeperateTab: 1
   playerObject: {fileID: 1773745211}
 --- !u!54 &286093048
 Rigidbody:
@@ -1047,7 +1066,7 @@ Transform:
   m_GameObject: {fileID: 286093046}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 29.3, y: 4.63, z: 5}
+  m_LocalPosition: {x: 17.87, y: 4.63, z: 4.06}
   m_LocalScale: {x: 0.6, y: 0.3, z: 0.6}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1501,6 +1520,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: 6712c26dc1f282348945a9bae3e4b1a8, type: 2}
     - target: {fileID: -851114287730531682, guid: 4bb7af81d7cb81f4890cfcfd3bac9974, type: 3}
+      propertyPath: m_Name
+      value: DoorBlockLvl1
+      objectReference: {fileID: 0}
+    - target: {fileID: -851114287730531682, guid: 4bb7af81d7cb81f4890cfcfd3bac9974, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -1587,6 +1610,10 @@ PrefabInstance:
     - target: {fileID: 3416647289793868858, guid: 4bb7af81d7cb81f4890cfcfd3bac9974, type: 3}
       propertyPath: m_StaticShadowCaster
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3566207899841815972, guid: 4bb7af81d7cb81f4890cfcfd3bac9974, type: 3}
+      propertyPath: m_Name
+      value: DoorBlockLvl2
       objectReference: {fileID: 0}
     - target: {fileID: 3566207899841815972, guid: 4bb7af81d7cb81f4890cfcfd3bac9974, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -1695,7 +1722,13 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 3566207899841815972, guid: 4bb7af81d7cb81f4890cfcfd3bac9974, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 438049015}
+    - targetCorrespondingSourceObject: {fileID: -851114287730531682, guid: 4bb7af81d7cb81f4890cfcfd3bac9974, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 250925439}
   m_SourcePrefab: {fileID: 100100000, guid: 4bb7af81d7cb81f4890cfcfd3bac9974, type: 3}
 --- !u!1 &410087039
 GameObject:
@@ -1818,6 +1851,25 @@ MonoBehaviour:
   m_LightCookieSize: {x: 1, y: 1}
   m_LightCookieOffset: {x: 0, y: 0}
   m_SoftShadowQuality: 0
+--- !u!1 &438049011 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3566207899841815972, guid: 4bb7af81d7cb81f4890cfcfd3bac9974, type: 3}
+  m_PrefabInstance: {fileID: 335320889}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &438049015
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 438049011}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e46803d27d63a4746a58ee3d8a075a48, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  accessLevelNeeded: 2
+  playerObject: {fileID: 1773745211}
 --- !u!1 &486867185
 GameObject:
   m_ObjectHideFlags: 0
@@ -2330,7 +2382,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerOnCube: 0
-  levelURL: http://localhost:8000/understandHeadset.html
+  levelURL: https://playground.interactievetechnologie.nl/understandHeadset.html
   accessLevelNeeded: 0
   accessLevelOnSeperateTab: 1
   playerObject: {fileID: 1773745211}
@@ -3513,7 +3565,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerOnCube: 0
-  levelURL: http://unity3d.com/
+  levelURL: https://playground.interactievetechnologie.nl/quiz1.html
   accessLevelNeeded: 1
   accessLevelOnSeperateTab: 1
   playerObject: {fileID: 1773745211}
@@ -3627,7 +3679,7 @@ Transform:
   m_GameObject: {fileID: 1457111260}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 22.88, y: 4.63, z: 4.9}
+  m_LocalPosition: {x: 17.91, y: 4.63, z: 6.03}
   m_LocalScale: {x: 0.6, y: 0.3, z: 0.6}
   m_ConstrainProportionsScale: 0
   m_Children: []

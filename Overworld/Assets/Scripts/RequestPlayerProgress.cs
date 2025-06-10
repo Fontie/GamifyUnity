@@ -40,6 +40,8 @@ public class RequestPlayerProgress : MonoBehaviour
         playerObject.GetComponent<PlayerMovement>().accessLevel = data.accesslevel;
 
 
+
+
         // Parse the string values into floats
         if (
             float.TryParse(values[0], NumberStyles.Float, CultureInfo.InvariantCulture, out float x) &&
