@@ -48,7 +48,7 @@ public class CubeTrigger : MonoBehaviour
                 Renderer playerRenderer = collision.gameObject.GetComponent<Renderer>();
                 if (playerRenderer != null)
                 {
-                    playerRenderer.material.color = new Color(1, 0, 0, 1);
+                    playerRenderer.material.color = new Color(255, 255, 255, 0);
                 }
             }
             else
@@ -71,7 +71,8 @@ public class CubeTrigger : MonoBehaviour
             Renderer playerRenderer = collision.gameObject.GetComponent<Renderer>();
             if (playerRenderer != null)
             {
-                playerRenderer.material.color = new Color(255, 255, 255);
+                
+                playerRenderer.material.color = new Color(1, 0, 0, 0);
             }
 
         }
@@ -92,6 +93,7 @@ public class CubeTrigger : MonoBehaviour
 
         if (canAccessLevel && Input.GetKeyDown(KeyCode.Return)) // Detect Enter key
         {
+            playerScript.accessLevel = 20;
             //enter level
             PerformAction();
         }
